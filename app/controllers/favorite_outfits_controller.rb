@@ -1,0 +1,2 @@
+class FavoriteOutfitsController < ApplicationController
+end
