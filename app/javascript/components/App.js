@@ -1,15 +1,29 @@
-import React from "react"
-import PropTypes from "prop-types"
-class App extends React.Component {
-  render () {
-    return (
-      <React.Fragment>
-        <h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
-      </React.Fragment>
-    );
-  }
-}
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Category from "./pages/Category";
+import Aboutus from "./pages/Aboutus";
+import MyCatalog from "./pages/MyCatalog";
+import OutfitNew from "./pages/OutfitNew";
+import OutfitProtectedIndex from "./pages/OutfitProtectedIndex";
+import Footer from "./components/Footer";
 
-export default App
+const App = (props) => {
+  return (
+    <BrowserRouter>
+      <Header {...props} />
+      <Routes>
+        <Route exact path="/" element={<Home {...props} />} />
+        <Route exact path="/Categories" element={<Category {...props} />} />
+        <Route exact path="/About" element={<Aboutus />} />
+        <Route exact path="/MyCatalog" element={<MyCatalog />} />
+        <Route exact path="/MyUploads" element={<OutfitProtectedIndex />} />
+        <Route exact path="/Upload" element={<OutfitNew />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+};
+
+export default App;
