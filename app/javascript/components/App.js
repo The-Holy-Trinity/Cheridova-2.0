@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 const App = (props) => {
   return (
     <BrowserRouter>
-    <Header {...props}/>
+      <Header {...props} />
       <Routes>
         <Route exact path="/" element={<Home {...props} />} />
         <Route exact path="/Categories" element={<Category {...props} />} />
@@ -21,7 +21,7 @@ const App = (props) => {
         <Route exact path="/MyUploads" element={<OutfitProtectedIndex />} />
         <Route exact path="/Upload" element={<OutfitNew />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 };
