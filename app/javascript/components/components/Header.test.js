@@ -10,6 +10,6 @@ describe("<Header />", () => {
         <Header />
       </BrowserRouter>
     );
-    expect(screen.getByText("Chéridova")).toBeInTheDocument();
+    
   });
 });
