@@ -1,15 +1,17 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Header from "./Header";
+import NotFound from "./NotFound";
 import { BrowserRouter } from "react-router-dom";
 
-describe("<Header />", () => {
+describe("<NotFound />", () => {
   it("renders without crashing", () => {
     render(
       <BrowserRouter>
-        <Header />
+        <NotFound />
       </BrowserRouter>
     );
-    
+    expect(
+      screen.getByText("The Outfits you seek are lost in the clothes pile.")
+    ).toBeInTheDocument();
   });
 });
