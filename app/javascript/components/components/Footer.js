@@ -1,12 +1,15 @@
 import React from "react";
 
-const Footer = (props) => {
+const Footer = () => {
   return (
-    <>
-      <h3 className="text-center text-1xl font-bold">
-        Chéridova made by Annabella, Charlie, and Shannon
-      </h3>
-    </>
+    <footer className="bg-beige fixed bottom-0 left-0 z-20 w-full p-4 flex md:p-4">
+      <div className="container text-center">
+        <p class="text-base text-center">
+          © 2023 Chéridova By: Annabella, Charlie, and Shannon. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
   );
 };
 
