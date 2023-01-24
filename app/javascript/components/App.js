@@ -25,6 +25,18 @@ const App = (props) => {
       })
       .catch((error) => console.log(error));
   };
+  const createOutfit = (outfit) => {
+    fetch("/outfits", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ outfit }),
+    })
+      .then((response) => response.json())
+      .then(() => readOutfits())
+      .catch((error) => console.error(error));
+  };
   return (
     <BrowserRouter>
       <Header {...props} />
@@ -34,7 +46,7 @@ const App = (props) => {
         <Route exact path="/About" element={<Aboutus />} />
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
         <Route exact path="/MyUploads" element={<OutfitProtectedIndex />} />
-        <Route exact path="/Upload" element={<OutfitNew />} />
+        <Route exact path="/Upload" element={<OutfitNew {...props} createOutfit={createOutfit} readOutfits={readOutfits} />} />
         <Route
           exact
           path="/OutfitsShow/:id"
