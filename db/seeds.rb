@@ -207,7 +207,7 @@ outfit_seeds = [
   style: "Office Attire",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2022/04/21-08-17_Set_A_M_OLD_v1_1x1-1024x1024.jpeg",
   gender: "male"
-}
+},
 {
     name: "DateNight1",
     top: "Coral Sweater",
@@ -411,6 +411,8 @@ outfit_seeds = [
 }
 
 ]
-
-
+outfit_seeds.each do |outfit|
+  user.outfits.create(outfit)
+  p "creating: #{outfit}"
 end
+

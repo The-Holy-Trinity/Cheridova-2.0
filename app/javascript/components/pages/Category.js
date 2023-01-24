@@ -43,7 +43,7 @@ const Category = (props) => {
           textAlign: "center",
         }}
       >
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/Outfits" className="nav-link">
           <button>All Outfits</button>
         </NavLink>
       </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -9,8 +9,22 @@ import OutfitNew from "./pages/OutfitNew";
 import OutfitProtectedIndex from "./pages/OutfitProtectedIndex";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
+import OutfitIndex from "./pages/OutfitIndex";
 
 const App = (props) => {
+  const [outfits, setOutfits] = useState([]);
+  useEffect(() => {
+    readOutfits();
+  }, []);
+
+  const readOutfits = () => {
+    fetch("/outfits")
+      .then((response) => response.json())
+      .then((payload) => {
+        setOutfits(payload);
+      })
+      .catch((error) => console.log(error));
+  };
   return (
     <BrowserRouter>
       <Header {...props} />
@@ -21,6 +35,11 @@ const App = (props) => {
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
         <Route exact path="/MyUploads" element={<OutfitProtectedIndex />} />
         <Route exact path="/Upload" element={<OutfitNew />} />
+        <Route
+          exact
+          path="/Outfits"
+          element={<OutfitIndex outfits={outfits} />}
+        />
         <Route exact path="/*" element={<NotFound />} />
       </Routes>
       <Footer />

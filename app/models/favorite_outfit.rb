@@ -1,4 +1,4 @@
 class FavoriteOutfit < ApplicationRecord
-    belongs_to :User
-    has_many :outfits through: :User
+    belongs_to :user
+    belongs_to :outfit
 end
