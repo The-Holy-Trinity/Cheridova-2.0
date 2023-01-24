@@ -22,7 +22,7 @@ const OutfitNew = ({ createOutfit, logged_in, current_user }) => {
     newOutfit.user_id = current_user.id
     createOutfit(newOutfit)
     navigate("/Outfits") 
-    console.log("created outfit") }
+    }
     
   if (logged_in === true) {
     return (
