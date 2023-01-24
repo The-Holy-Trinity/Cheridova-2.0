@@ -10,7 +10,7 @@ import OutfitProtectedIndex from "./pages/OutfitProtectedIndex";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import OutfitIndex from "./pages/OutfitIndex";
-
+import OutfitShow from "./pages/OutfitShow";
 const App = (props) => {
   const [outfits, setOutfits] = useState([]);
   useEffect(() => {
@@ -35,6 +35,10 @@ const App = (props) => {
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
         <Route exact path="/MyUploads" element={<OutfitProtectedIndex />} />
         <Route exact path="/Upload" element={<OutfitNew />} />
+        <Route
+          exact
+          path="/OutfitsShow/:id"
+          element={<OutfitShow outfits={outfits} />}/>
         <Route
           exact
           path="/Outfits"

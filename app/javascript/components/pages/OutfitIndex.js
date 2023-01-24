@@ -19,7 +19,10 @@ const OutfitIndex = ({ outfits }) => {
               <CardSubtitle className="mb-2 text-muted" tag="h6">
                 Style: {outfit.style}
               </CardSubtitle>
-              <NavLink to={`/outfitshow/${outfit.id}`}>
+              <CardSubtitle className="mb-2 text-muted" tag="h6">
+                Gender: {outfit.gender}
+              </CardSubtitle>
+              <NavLink to={`/OutfitsShow/${outfit.id}`}>
                 <Button>See More Details</Button>
               </NavLink>
             </CardBody>
