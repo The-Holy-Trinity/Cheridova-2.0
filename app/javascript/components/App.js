@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import OutfitIndex from "./pages/OutfitIndex";
 import OutfitShow from "./pages/OutfitShow";
+import OutfitEdit from "./pages/OutfitEdit";
 const App = (props) => {
   const [outfits, setOutfits] = useState([]);
   useEffect(() => {
@@ -37,6 +38,20 @@ const App = (props) => {
       .then(() => readOutfits())
       .catch((error) => console.error(error));
   };
+  const updateOutfit = (outfit, id) => {
+    console.log(outfit, id)
+    fetch(`http://localhost:3000/outfits/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ outfit }),
+    })
+      .then((response) => response.json())
+      .then(() => readOutfits())
+      .catch((error) => console.error(error));
+  };
+
   return (
     <BrowserRouter>
       <Header {...props} />
@@ -45,12 +60,37 @@ const App = (props) => {
         <Route exact path="/Categories" element={<Category {...props} />} />
         <Route exact path="/About" element={<Aboutus />} />
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
-        <Route exact path="/MyUploads" element={<OutfitProtectedIndex {...props} outfits={outfits}/>} />
-        <Route exact path="/Upload" element={<OutfitNew {...props} createOutfit={createOutfit} readOutfits={readOutfits} />} />
+        <Route
+          exact
+          path="/MyUploads"
+          element={<OutfitProtectedIndex {...props} outfits={outfits} />}
+        />
+        <Route
+          exact
+          path="/Upload"
+          element={
+            <OutfitNew
+              {...props}
+              createOutfit={createOutfit}
+              readOutfits={readOutfits}
+            />
+          }
+        />
         <Route
           exact
           path="/OutfitsShow/:id"
-          element={<OutfitShow outfits={outfits} />}/>
+          element={<OutfitShow outfits={outfits} />}
+        />
+        <Route
+          path="/OutfitEdit/:id"
+          element={
+            <OutfitEdit
+              {...props}
+              updateOutfit={updateOutfit}
+              outfits={outfits}
+            />
+          }
+        />
         <Route
           exact
           path="/Outfits"
