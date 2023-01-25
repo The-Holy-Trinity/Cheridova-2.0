@@ -8,7 +8,7 @@ const OutfitDate = ({ outfits }) => {
       return outfit;
     }
   });
-  console.log(dateOutfits);
+ 
   return (
     <main className="outfit-index-cards">
       {dateOutfits?.map((outfit, index) => {
