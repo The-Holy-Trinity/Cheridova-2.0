@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import OutfitIndex from "./pages/OutfitIndex";
 import OutfitShow from "./pages/OutfitShow";
+import OutfitDate from "./pages/OutfitDate";
 const App = (props) => {
   const [outfits, setOutfits] = useState([]);
   useEffect(() => {
@@ -45,16 +46,36 @@ const App = (props) => {
         <Route exact path="/Categories" element={<Category {...props} />} />
         <Route exact path="/About" element={<Aboutus />} />
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
-        <Route exact path="/MyUploads" element={<OutfitProtectedIndex {...props} outfits={outfits}/>} />
-        <Route exact path="/Upload" element={<OutfitNew {...props} createOutfit={createOutfit} readOutfits={readOutfits} />} />
+        <Route
+          exact
+          path="/MyUploads"
+          element={<OutfitProtectedIndex {...props} outfits={outfits} />}
+        />
+        <Route
+          exact
+          path="/Upload"
+          element={
+            <OutfitNew
+              {...props}
+              createOutfit={createOutfit}
+              readOutfits={readOutfits}
+            />
+          }
+        />
         <Route
           exact
           path="/OutfitsShow/:id"
-          element={<OutfitShow outfits={outfits} />}/>
+          element={<OutfitShow outfits={outfits} />}
+        />
         <Route
           exact
           path="/Outfits"
           element={<OutfitIndex outfits={outfits} />}
+        />
+        <Route
+          exact
+          path="/OutfitDate"
+          element={<OutfitDate outfits={outfits} />}
         />
         <Route exact path="/*" element={<NotFound />} />
       </Routes>
