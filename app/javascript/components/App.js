@@ -45,7 +45,7 @@ const App = (props) => {
         <Route exact path="/Categories" element={<Category {...props} />} />
         <Route exact path="/About" element={<Aboutus />} />
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
-        <Route exact path="/MyUploads" element={<OutfitProtectedIndex />} />
+        <Route exact path="/MyUploads" element={<OutfitProtectedIndex {...props} outfits={outfits}/>} />
         <Route exact path="/Upload" element={<OutfitNew {...props} createOutfit={createOutfit} readOutfits={readOutfits} />} />
         <Route
           exact

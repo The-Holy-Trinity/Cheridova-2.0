@@ -10,8 +10,6 @@ describe("<Footer />", () => {
         <Footer />
       </BrowserRouter>
     );
-    expect(
-      screen.getByText("Chéridova made by Annabella, Charlie, and Shannon")
-    ).toBeInTheDocument();
+    expect(screen.getByText('© 2023 Chéridova By: Annabella, Charlie, and Shannon. All Rights Reserved.')).toBeInTheDocument()
   });
 });
