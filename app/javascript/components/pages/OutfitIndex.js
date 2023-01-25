@@ -3,7 +3,6 @@ import { Card, CardBody, CardSubtitle, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 const OutfitIndex = ({ outfits }) => {
-  console.log(outfits);
   return (
     <main className="outfit-index-cards">
       {outfits?.map((outfit, index) => {

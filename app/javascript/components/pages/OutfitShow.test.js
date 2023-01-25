@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import OutfitShow from "./OutfitShow";
 import { BrowserRouter, MemoryRouter, Routes, Route } from "react-router-dom";
-import outfits from "./mockOutfits";
+import mockOutfits from "./mockOutfits";
 
 const renderComponent = (props, route) => {
   return render(
@@ -17,7 +17,7 @@ const renderComponent = (props, route) => {
 
 describe("<OutfitShow />", () => {
   it("renders without crashing", () => {
-   renderComponent({outfits}, "/OutfitsShow/1")
+   renderComponent({outfits:mockOutfits}, "/OutfitsShow/1")
     expect(screen.getByText("Date Night")).toBeInTheDocument();
     expect(screen.getByText("Gender: male")).toBeInTheDocument();
     expect(
@@ -33,7 +33,7 @@ describe("<OutfitShow />", () => {
     expect(screen.getByText("Back to outfits")).toBeInTheDocument();
   });
   it("shows notfound when parameter doesn't match", ()=>{
-    renderComponent({outfits}, "/OutfitsShow/3")
+    renderComponent({outfits:mockOutfits}, "/OutfitsShow/3")
     expect(screen.getByText("Outfit not located")).toBeInTheDocument()
   }) 
 });

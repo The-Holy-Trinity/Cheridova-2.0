@@ -8,5 +8,5 @@ body,
 .app {
   height: 100%;
   background-color: #FFFFFF;
-  @apply text-gray;
+  /* @apply text-gray; */
 }
