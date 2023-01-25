@@ -37,6 +37,17 @@ const App = (props) => {
       .then(() => readOutfits())
       .catch((error) => console.error(error));
   };
+  const deleteOutfit = (id) => {
+    fetch(`http://localhost:3000/outfits/${id}`, {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "DELETE"
+    })
+      .then((response) => response.json())
+      .then(() => readOutfits())
+      .catch((errors) => console.log("delete errors:", errors))
+  }
   return (
     <BrowserRouter>
       <Header {...props} />
@@ -45,7 +56,7 @@ const App = (props) => {
         <Route exact path="/Categories" element={<Category {...props} />} />
         <Route exact path="/About" element={<Aboutus />} />
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
-        <Route exact path="/MyUploads" element={<OutfitProtectedIndex {...props} outfits={outfits}/>} />
+        <Route exact path="/MyUploads" element={<OutfitProtectedIndex {...props} outfits={outfits} deleteOutfit={deleteOutfit}/>} />
         <Route exact path="/Upload" element={<OutfitNew {...props} createOutfit={createOutfit} readOutfits={readOutfits} />} />
         <Route
           exact

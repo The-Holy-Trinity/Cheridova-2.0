@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
-const OutfitProtectedIndex = ({ outfits, logged_in, current_user}) => {
+const OutfitProtectedIndex = ({ outfits, logged_in, current_user, deleteOutfit}) => {
   const current_user_outfits = outfits?.filter((outfit) => {
     return outfit.user_id === current_user.id;
   });
@@ -31,7 +31,9 @@ const OutfitProtectedIndex = ({ outfits, logged_in, current_user}) => {
               <NavLink to={`/OutfitsShow/${outfit.id}`}>
                 <Button>See More Details</Button>
               </NavLink>
-              
+              <NavLink to="/Outfits">
+                <Button onClick={() => deleteOutfit(`${outfit.id}`)}>Delete this outfit</Button>
+              </NavLink>
             </CardBody>
           </Card>
         );
