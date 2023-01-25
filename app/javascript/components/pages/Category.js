@@ -33,7 +33,7 @@ const Category = (props) => {
           <button>Formal</button>
         </NavLink>
 
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/OutfitDate" className="nav-link">
           <button>Date Night</button>
         </NavLink>
       </div>
