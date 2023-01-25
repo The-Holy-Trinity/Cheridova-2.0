@@ -16,7 +16,7 @@ outfit_seeds = [
     accessories: "None",
     style: "Date Night",
     image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/11/21-08-18_Set_B_M_SIT_v3_1x1-scaled.jpeg",
-    gender: "male"
+    gender: "Male"
 },
 {
   name: "DateNight2",
@@ -26,7 +26,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Date Night",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/11/21-08-18_Set_B_M_SIT_v2_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "DateNight3",
@@ -36,7 +36,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Date Night",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-07-14_Set_B_M_SIT_RACK_v3_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "DateNight4",
@@ -46,7 +46,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Date Night",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/03/20-05-28_SET_R_M_OLD_V16-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "DateNight5",
@@ -56,7 +56,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Date Night",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/12/21-08-20_Set_A_M_SLD_GRID_v3_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Casual1",
@@ -66,7 +66,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/05/20-11-16_Set_2_M_OLD_V6_1x1-592x592.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Casual2",
@@ -76,7 +76,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2022/07/21-05-12_Set_3_M_OLD_v8_1x1-592x592.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Casual3",
@@ -86,7 +86,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2022/08/14082204-flatten-08e09fdd2591d1a3f60b4123fa224cc9-592x592.png",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Casual4",
@@ -96,7 +96,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/20-04-08_SET_R_M_OLD_V07_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Casual5",
@@ -106,7 +106,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/20-07-10_Set_2_M_OLD_v10_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Formal1",
@@ -116,7 +116,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Formal",
   image: "https://i.pinimg.com/564x/16/2c/e0/162ce02477ab86f08af59460ebf1aaa4.jpg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Formal2",
@@ -126,7 +126,7 @@ outfit_seeds = [
   accessories: "Blue watch, grey scarf",
   style: "Formal",
   image: "https://www.shutterstock.com/image-photo/set-mans-fashion-accessories-600w-393334606.jpg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Formal3",
@@ -136,7 +136,7 @@ outfit_seeds = [
   accessories: "Black belt, Gold watch",
   style: "Formal",
   image: "https://www.shutterstock.com/image-photo/suit-jacket-pants-blue-shirt-600w-1302016903.jpg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Formal4",
@@ -146,7 +146,7 @@ outfit_seeds = [
   accessories: "Straw hat, Black belt, Blue bowtie, Watch, and Sunglasses",
   style: "Formal",
   image: "https://www.shutterstock.com/image-photo/mens-fashion-blue-suits-clothing-600w-1546096856.jpg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Formal5",
@@ -156,7 +156,7 @@ outfit_seeds = [
   accessories: "Brown Belt",
   style: "Formal",
   image: "https://www.shutterstock.com/image-photo/mens-fashion-gray-suit-tie-600w-1725552727.jpg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Office1",
@@ -166,7 +166,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Office Attire",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-06-16_Set_B_M_SIT_RACK_v1_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Office2",
@@ -176,7 +176,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Office Attire",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-06-16_Set_B_M_SIT_RACK_v4_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Office3",
@@ -186,7 +186,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Office Attire",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-06-16_Set_B_M_SIT_RACK_v3_1x1-scaled.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Office4",
@@ -196,7 +196,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Office Attire",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2022/04/22-02-15_Set_A_M_OLD_v7_1x1-1024x1024.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
   name: "Office5",
@@ -206,7 +206,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Office Attire",
   image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2022/04/21-08-17_Set_A_M_OLD_v1_1x1-1024x1024.jpeg",
-  gender: "male"
+  gender: "Male"
 },
 {
     name: "DateNight1",
@@ -216,7 +216,7 @@ outfit_seeds = [
     accessories: "None",
     style: "Date night",
     image: "https://www.stitchfix.com/women/blog/wp-content/uploads/19-07-01_Set_4_W_OLD_v2-592x592.jpg",
-    gender: "female"
+    gender: "Female"
 },
 {
   name: "DateNight2",
@@ -226,7 +226,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Date night",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/20-01-27_Set_3_W_SIT_v2_1x1-scaled.jpeg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "DateNight3",
@@ -236,7 +236,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Date night",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/20-01-29_Set_3_W_SIT_v1_1x1.jpeg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "DateNight4",
@@ -246,7 +246,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Date night",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/20-01-21_SET_1_W_OLD_v7_BG-scaled.jpeg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "DateNight5",
@@ -256,7 +256,7 @@ outfit_seeds = [
   accessories: "Black Purse",
   style: "Date night",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/21-01-20_SET_2_W_OLD_V9_1x1-scaled.jpeg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Casual1",
@@ -266,7 +266,7 @@ outfit_seeds = [
   accessories: "Black Purse",
   style: "Casual",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2015/07/2015_07_10_Stylist_Summer-Tips_0091-592x592.jpg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Casual2",
@@ -276,7 +276,7 @@ outfit_seeds = [
   accessories: "Silver Bracelet",
   style: "Casual",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/03/2015_05_22_0040-592x592.jpg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Casual3",
@@ -286,7 +286,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/20-01-22_SET_1_W_OLD_v8-scaled.jpeg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Casual4",
@@ -296,7 +296,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/20-01-23_SET_1_W_OLD_v1-scaled.jpeg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Casual5",
@@ -306,7 +306,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Casual",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/20-09-17_Set_1_W_OLD_v2_1x1-scaled.jpeg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Formal1",
@@ -316,7 +316,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Formal",
   image: "https://seezona.imgix.net/ed/15/ed159a569d8f42efbf3870e4ccb68cee_m.png?auto=format&fit=fill&q=90&bg=F7F7F7&ar=300%3A365&ixlib=react-9.5.2&w=1600",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Formal2",
@@ -326,7 +326,7 @@ outfit_seeds = [
   accessories: "None",
   style: "Formal",
   image: "https://n.nordstrommedia.com/id/sr3/4baa3f72-f4b9-4ff1-a89c-b54b229b0dd5.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Formal3",
@@ -336,7 +336,7 @@ outfit_seeds = [
   accessories: "White Earrings",
   style: "Formal",
   image: "https://n.nordstrommedia.com/id/sr3/0c67d797-45bd-4110-bf56-790ca959246a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Formal4",
@@ -346,7 +346,7 @@ outfit_seeds = [
   accessories: "Diamond Earrings",
   style: "Formal",
   image: "https://n.nordstrommedia.com/id/sr3/ccb4870a-6c73-4abb-8303-b65bbb2c4a3c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Formal5",
@@ -356,7 +356,7 @@ outfit_seeds = [
   accessories: "Red Earring",
   style: "Formal",
   image: "https://n.nordstrommedia.com/id/sr3/cb275339-77c6-4749-bb5c-c367144b39d5.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Office1",
@@ -366,7 +366,7 @@ outfit_seeds = [
   accessories: "Black Coat",
   style: "Office Attire",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2014/12/Holiday-pieces-repurposed-for-work-3.jpg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Office2",
@@ -376,7 +376,7 @@ outfit_seeds = [
   accessories: "Gold Cuff Bracelet",
   style: "Office Attire",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/4dbf95a350ff0d3226daea8cd802a539.jpg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Office3",
@@ -386,7 +386,7 @@ outfit_seeds = [
   accessories: "Black Rim Glasses",
   style: "Office Attire",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/233328eb067830631be1484966b5628e.jpg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Office4",
@@ -396,7 +396,7 @@ outfit_seeds = [
   accessories: "Silver bracelet",
   style: "Office Attire",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/Business-Casual-Wardrobe.jpg",
-  gender: "female"
+  gender: "Female"
 },
 {
   name: "Office5",
@@ -407,7 +407,7 @@ outfit_seeds = [
   style: "Office Attire",
   image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
   ",
-  gender: "female"
+  gender: "Female"
 }
 
 ]
