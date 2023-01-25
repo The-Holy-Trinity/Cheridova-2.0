@@ -269,6 +269,7 @@ RSpec.describe "Outfits", type: :request do
       expect(json_response['user_id']).to include "can't be blank"
     end
 end
+
   describe "PATCH /update" do
     let(:user){User.create(
       email: "test@example.com", 
@@ -307,13 +308,14 @@ end
       outfit_params = {outfit: {
         name: nil,
         top: "Tan Buttondown Shirt",
-        bottom: "Tan Lace Skirt",
-        shoes: "Tan Strappy Pumps",
-        accessories: "None",
-        style: "Office Attire",
-        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
-        ",
-        gender: "female"
+          bottom: "Tan Lace Skirt",
+          shoes: "Tan Strappy Pumps",
+          accessories: "None",
+          style: "Office Attire",
+          image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+          ",
+          gender: "female"
+
         }}
 
       patch "/outfits/#{outfit.id}", params: outfit_params
@@ -447,4 +449,26 @@ end
       expect(json_response['gender']).to include "can't be blank"
     end
   end
+  describe "DESTROY /delete" do
+  it "deletes an outfit" do
+    user = User.create(
+      email: "test@example.com", 
+      password: "password", 
+      password_confirmation: "password")
+      outfit = user.outfits.create(
+        name: "Office5",
+        top: "Tan Buttondown Shirt",
+        bottom: "Tan Lace Skirt",
+        shoes: "Tan Strappy Pumps",
+        accessories: "None",
+        style: "Office Attire",
+        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+        ",
+        gender: "female"
+         )
+    expect do 
+      delete outfit_url(outfit)
+    end.to change(Outfit, :count).by(-1)
+  end
+end
 end
