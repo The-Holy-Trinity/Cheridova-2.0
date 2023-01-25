@@ -29,7 +29,7 @@ const Category = (props) => {
           <button>Casual</button>
         </NavLink>
 
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/OutfitsFormal" className="nav-link">
           <button>Formal</button>
         </NavLink>
 

@@ -11,7 +11,15 @@ import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import OutfitIndex from "./pages/OutfitIndex";
 import OutfitShow from "./pages/OutfitShow";
+<<<<<<< datenight-category
 import OutfitDate from "./pages/OutfitDate";
+=======
+<<<<<<< formal-category
+import OutfitFormal from "./pages/OutfitFormal";
+=======
+import OutfitEdit from "./pages/OutfitEdit";
+>>>>>>> main
+>>>>>>> main
 const App = (props) => {
   const [outfits, setOutfits] = useState([]);
   useEffect(() => {
@@ -38,6 +46,34 @@ const App = (props) => {
       .then(() => readOutfits())
       .catch((error) => console.error(error));
   };
+
+  const deleteOutfit = (id) => {
+    fetch(`http://localhost:3000/outfits/${id}`, {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "DELETE"
+    })
+      .then((response) => response.json())
+      .then(() => readOutfits())
+      .catch((errors) => console.log("delete errors:", errors))
+  }
+
+  const updateOutfit = (outfit, id) => {
+    console.log(outfit, id)
+    fetch(`http://localhost:3000/outfits/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ outfit }),
+    })
+      .then((response) => response.json())
+      .then(() => readOutfits())
+      .catch((error) => console.error(error));
+  };
+
+
   return (
     <BrowserRouter>
       <Header {...props} />
@@ -46,6 +82,7 @@ const App = (props) => {
         <Route exact path="/Categories" element={<Category {...props} />} />
         <Route exact path="/About" element={<Aboutus />} />
         <Route exact path="/MyCatalog" element={<MyCatalog />} />
+<<<<<<< datenight-category
         <Route
           exact
           path="/MyUploads"
@@ -62,11 +99,28 @@ const App = (props) => {
             />
           }
         />
+=======
+        <Route exact path="/MyUploads" element={<OutfitProtectedIndex {...props} outfits={outfits} updateOutfit={updateOutfit} deleteOutfit={deleteOutfit}/>} />
+        <Route exact path="/Upload" element={<OutfitNew {...props} createOutfit={createOutfit} readOutfits={readOutfits} />} />
+>>>>>>> main
         <Route
           exact
           path="/OutfitsShow/:id"
           element={<OutfitShow outfits={outfits} />}
         />
+<<<<<<< datenight-category
+=======
+        <Route
+          path="/OutfitEdit/:id"
+          element={
+            <OutfitEdit
+              {...props}
+              updateOutfit={updateOutfit}
+              outfits={outfits}
+            />
+          }
+        />
+>>>>>>> main
         <Route
           exact
           path="/Outfits"
@@ -74,8 +128,13 @@ const App = (props) => {
         />
         <Route
           exact
+<<<<<<< datenight-category
           path="/OutfitDate"
           element={<OutfitDate outfits={outfits} />}
+=======
+          path="/OutfitsFormal"
+          element={<OutfitFormal outfits={outfits} />}
+>>>>>>> main
         />
         <Route exact path="/*" element={<NotFound />} />
       </Routes>
