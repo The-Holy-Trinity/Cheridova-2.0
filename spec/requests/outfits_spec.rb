@@ -269,7 +269,187 @@ RSpec.describe "Outfits", type: :request do
       expect(json_response['user_id']).to include "can't be blank"
     end
 end
-describe "DESTROY /delete" do
+
+  describe "PATCH /update" do
+    let(:user){User.create(
+      email: "test@example.com", 
+      password: "password", 
+      password_confirmation: "password")}
+    let(:outfit){user.outfits.create(
+      name: "Office5",
+      top: "Tan Buttondown Shirt",
+      bottom: "Tan Lace Skirt",
+      shoes: "Tan Strappy Pumps",
+      accessories: "None",
+      style: "Office Attire",
+      image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+      ",
+      gender: "female"
+    )}
+    it "updates an outfit" do
+      outfit_params = {outfit: {
+          name: "Office Dress",
+          top: "Tan Buttondown Shirt",
+          bottom: "Tan Lace Skirt",
+          shoes: "Tan Strappy Pumps",
+          accessories: "None",
+          style: "Office Attire",
+          image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+          ",
+          gender: "female"
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      updated_outfit = Outfit.find(outfit.id)
+      expect(response).to have_http_status(200)
+      expect(updated_outfit.name).to eq 'Office Dress'
+    end
+    it 'cannot update an outfit at particular ID without a name' do
+      outfit_params = {outfit: {
+        name: nil,
+        top: "Tan Buttondown Shirt",
+          bottom: "Tan Lace Skirt",
+          shoes: "Tan Strappy Pumps",
+          accessories: "None",
+          style: "Office Attire",
+          image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+          ",
+          gender: "female"
+
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['name']).to include "can't be blank"
+    end
+    it 'cannot update an outfit at particular ID without a top' do
+      outfit_params = {outfit: {
+        name: "Office Dress",
+        top: nil,
+        bottom: "Tan Lace Skirt",
+        shoes: "Tan Strappy Pumps",
+        accessories: "None",
+        style: "Office Attire",
+        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+        ",
+        gender: "female"
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['top']).to include "can't be blank"
+    end
+    it 'cannot update an outfit at particular ID without a bottom' do
+      outfit_params = {outfit: {
+        name: "Office Dress",
+        top: "Tan Buttondown Shirt",
+        bottom: nil,
+        shoes: "Tan Strappy Pumps",
+        accessories: "None",
+        style: "Office Attire",
+        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+        ",
+        gender: "female"
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['bottom']).to include "can't be blank"
+    end
+    it 'cannot update an outfit at particular ID without shoes' do
+      outfit_params = {outfit: {
+        name: "Office Dress",
+        top: "Tan Buttondown Shirt",
+        bottom: "Tan Lace Skirt",
+        shoes: nil,
+        accessories: "None",
+        style: "Office Attire",
+        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+        ",
+        gender: "female"
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['shoes']).to include "can't be blank"
+    end
+    it 'cannot update an outfit at particular ID without accessories' do
+      outfit_params = {outfit: {
+        name: "Office Dress",
+        top: "Tan Buttondown Shirt",
+        bottom: "Tan Lace Skirt",
+        shoes: "Tan Strappy Pumps",
+        accessories: nil,
+        style: "Office Attire",
+        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+        ",
+        gender: "female"
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['accessories']).to include "can't be blank"
+    end
+    it 'cannot update an outfit at particular ID without a style' do
+      outfit_params = {outfit: {
+        name: "Office Dress",
+        top: "Tan Buttondown Shirt",
+        bottom: "Tan Lace Skirt",
+        shoes: "Tan Strappy Pumps",
+        accessories: "None",
+        style: nil,
+        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+        ",
+        gender: "female"
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['style']).to include "can't be blank"
+    end
+    it 'cannot update an outfit at particular ID without an image' do
+      outfit_params = {outfit: {
+        name: "Office Dress",
+        top: "Tan Buttondown Shirt",
+        bottom: "Tan Lace Skirt",
+        shoes: "Tan Strappy Pumps",
+        accessories: "None",
+        style: "Office Attire",
+        image: nil,
+        gender: "female"
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['image']).to include "can't be blank"
+    end
+    it 'cannot update an outfit at particular ID without a gender' do
+      outfit_params = {outfit: {
+        name: "Office Dress",
+        top: "Tan Buttondown Shirt",
+        bottom: "Tan Lace Skirt",
+        shoes: "Tan Strappy Pumps",
+        accessories: "None",
+        style: "Office Attire",
+        image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
+        ",
+        gender: nil
+        }}
+
+      patch "/outfits/#{outfit.id}", params: outfit_params
+      expect(response).to have_http_status(422)
+      json_response = JSON.parse(response.body)
+      expect(json_response['gender']).to include "can't be blank"
+    end
+  end
+  describe "DESTROY /delete" do
   it "deletes an outfit" do
     user = User.create(
       email: "test@example.com", 
@@ -285,7 +465,7 @@ describe "DESTROY /delete" do
         image: "https://www.stitchfix.com/women/blog/wp-content/uploads/2016/08/07_12_SUM16_Aug-Blog-Fall-Workwear-Guide_08W1_v1_0007_SQ-1-592x592.jpg
         ",
         gender: "female"
-      )
+         )
     expect do 
       delete outfit_url(outfit)
     end.to change(Outfit, :count).by(-1)

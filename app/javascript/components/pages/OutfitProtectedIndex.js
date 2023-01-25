@@ -23,6 +23,9 @@ const OutfitProtectedIndex = ({ outfits, logged_in, current_user, deleteOutfit})
             />
             <CardBody>
             <CardSubtitle className="mb-2 text-muted" tag="h6">
+                Name: {outfit.name}
+              </CardSubtitle>
+            <CardSubtitle className="mb-2 text-muted" tag="h6">
                 Style: {outfit.style}
               </CardSubtitle>
               <CardSubtitle className="mb-2 text-muted" tag="h6">
@@ -33,6 +36,8 @@ const OutfitProtectedIndex = ({ outfits, logged_in, current_user, deleteOutfit})
               </NavLink>
               <NavLink to="/Outfits">
                 <Button onClick={() => deleteOutfit(`${outfit.id}`)}>Delete this outfit</Button>
+              <NavLink to={`/OutfitEdit/${outfit.id}`}>
+                <Button>Edit this outfit</Button>
               </NavLink>
             </CardBody>
           </Card>

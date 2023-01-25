@@ -1,4 +1,4 @@
-const outfits = [
+const mockOutfits = [
     {
       name: "DateNight1",
       top: "Tan Ribbed Button Collared Shirt with Blue Quilt Jacket",
@@ -8,7 +8,8 @@ const outfits = [
       style: "Date Night",
       image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/11/21-08-18_Set_B_M_SIT_v3_1x1-scaled.jpeg",
       gender: "male",
-      id:1
+      id:1,
+      user_id:1
   },
   {
     name: "DateNight2",
@@ -19,9 +20,10 @@ const outfits = [
     style: "Date Night",
     image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/11/21-08-18_Set_B_M_SIT_v2_1x1-scaled.jpeg",
     gender: "male",
-    id:2
+    id:2,
+    user_id:2
   }
   
   ]
 
-  export default outfits
+  export default mockOutfits
