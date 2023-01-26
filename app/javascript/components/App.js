@@ -14,6 +14,7 @@ import OutfitShow from "./pages/OutfitShow";
 import OutfitDate from "./pages/OutfitDate";
 import OutfitFormal from "./pages/OutfitFormal";
 import OutfitEdit from "./pages/OutfitEdit";
+import OutfitCasual from "./pages/OutfitCasual";
 
 const App = (props) => {
   const [outfits, setOutfits] = useState([]);
@@ -128,6 +129,11 @@ const App = (props) => {
           exact
           path="/OutfitsFormal"
           element={<OutfitFormal outfits={outfits} />}
+        />
+        <Route
+          exact
+          path="/OutfitsCasual"
+          element={<OutfitCasual outfits={outfits} />}
         />
         <Route exact path="/*" element={<NotFound />} />
       </Routes>

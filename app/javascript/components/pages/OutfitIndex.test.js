@@ -15,6 +15,6 @@ describe("<OutfitIndex />", () => {
 
     expect(screen.getAllByText("Style: Date Night").length).toEqual(2);
     expect(screen.getAllByText("Gender: male").length).toEqual(2);
-    expect(screen.getAllByText("See More Details").length).toEqual(2);
+    expect(screen.getAllByText("See More Details").length).toEqual(6);
   });
 });
