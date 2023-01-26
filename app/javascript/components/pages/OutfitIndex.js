@@ -36,7 +36,8 @@ const OutfitIndex = ({ outfits }) => {
                     Gender: {outfit.gender}
                   </CardSubtitle>
                   <NavLink to={`/OutfitsShow/${outfit.id}`}>
-                    <button className="bg-green font-garamond hover:bg-gray items-center text-white rounded-sm py-1 px-1 transition duration-500">
+                    <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-green hover:border-gray rounded">
+                      {" "}
                       See More Details
                     </button>
                   </NavLink>

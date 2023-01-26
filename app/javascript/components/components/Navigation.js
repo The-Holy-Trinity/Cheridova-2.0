@@ -9,7 +9,7 @@ const Navigation = ({
 }) => {
   return (
     <>
-      <nav className="bg-beige px-2 py-2.5 w-full fixed z-20 top-0 left-0  grid grid-flow-col auto-cols-fr-1 font-garamond">
+      <nav className="bg-beige px-2 py-3 w-full fixed z-20 top-0 left-0  grid grid-flow-col auto-cols-fr-1 font-garamond">
         <div className="flex items-center justify-between mx-auto w-5/6">
           <div className="w-full flex flex-wrap items-center gap-4 text-gray">
             <NavLink to="/" className="nav-link">

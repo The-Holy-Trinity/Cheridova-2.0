@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import OutfitIndex from "./pages/OutfitIndex";
 import OutfitShow from "./pages/OutfitShow";
+import OutfitFormal from "./pages/OutfitFormal";
+import OutfitEdit from "./pages/OutfitEdit";
 import OutfitDate from "./pages/OutfitDate";
 import OutfitFormal from "./pages/OutfitFormal";
 import OutfitEdit from "./pages/OutfitEdit";
