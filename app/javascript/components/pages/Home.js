@@ -70,11 +70,11 @@ const Home = ({
                 </a>
               </button>
             )}
-            {/* <NavLink to="/Categories" className="nav-link">
+            <NavLink to="/Categories" className="nav-link">
               <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-2 px-4 border-b-4 border-green hover:border-gray rounded">
                 View Categories
               </button>
-            </NavLink> */}
+            </NavLink>
           </div>
         </div>
       </div>
