@@ -62,6 +62,26 @@ const mockOutfits = [
     style: "Casual",
     image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2022/07/21-05-12_Set_3_M_OLD_v8_1x1-592x592.jpeg",
     gender: "Male"
+  },
+  {
+    name: "Office1",
+    top: "White shirt with Grey Blazer",
+    bottom: "Dark Blue Slacks",
+    shoes: "Grey Oxfords",
+    accessories: "None",
+    style: "Office Attire",
+    image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-06-16_Set_B_M_SIT_RACK_v1_1x1-scaled.jpeg",
+    gender: "Male"
+  },
+  {
+    name: "Office2",
+    top: "Light Blue Shirt with Orange Vest",
+    bottom: "Grey Slacks",
+    shoes: "Grey Oxfords",
+    accessories: "None",
+    style: "Office Attire",
+    image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-06-16_Set_B_M_SIT_RACK_v4_1x1-scaled.jpeg",
+    gender: "Male"
   }
   ]
 
