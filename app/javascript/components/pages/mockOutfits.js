@@ -42,6 +42,26 @@ const mockOutfits = [
     style: "Formal",
     image: "https://n.nordstrommedia.com/id/sr3/4baa3f72-f4b9-4ff1-a89c-b54b229b0dd5.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     gender: "female"
+  },
+  {
+    name: "Casual1",
+    top: "Tan hoodie with Aztec Print Flannel",
+    bottom: "Olive Green Jeans",
+    shoes: "Tan Loafer Boots",
+    accessories: "None",
+    style: "Casual",
+    image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/05/20-11-16_Set_2_M_OLD_V6_1x1-592x592.jpeg",
+    gender: "Male"
+  },
+  {
+    name: "Casual2",
+    top: "Multi Print Shirt",
+    bottom: "Light Blue Chinos",
+    shoes: "Tan Canvas Shoes",
+    accessories: "None",
+    style: "Casual",
+    image: "https://www.stitchfix.com/men/blog/wp-content/uploads/2022/07/21-05-12_Set_3_M_OLD_v8_1x1-592x592.jpeg",
+    gender: "Male"
   }
   ]
 
