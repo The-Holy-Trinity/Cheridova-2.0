@@ -10,19 +10,21 @@ const Home = ({
   return (
     <>
       {logged_in && (
-        <h1 class="text-3xl font-bold underline text-center">Welcome back!</h1>
+        <h1 className="text-3xl font-bold underline text-center">
+          Welcome back!
+        </h1>
       )}
       {logged_in && (
-        <h1 class="text-1xl font-bold text-center">
+        <h1 className="text-1xl font-bold text-center">
           Ready to make your day way more flashy?
         </h1>
       )}
 
       {!logged_in && (
-        <h1 class="text-3xl font-bold underline text-center">Welcome!</h1>
+        <h1 className="text-3xl font-bold underline text-center">Welcome!</h1>
       )}
       {!logged_in && (
-        <h1 class="text-2xl font-bold text-center">
+        <h1 className="text-2xl font-bold text-center">
           Chéridova is your one-stop shop to upgrading your wardrobe.
           Inspirations to many occasions we face in our day to day lives.
         </h1>

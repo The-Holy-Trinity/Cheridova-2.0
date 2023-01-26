@@ -8,8 +8,10 @@ const renderComponent = (props, route) => {
   return render(
     <MemoryRouter initialEntries={[route]}>
       <Routes>
-        <Route path="/OutfitsShow/:id" element={<OutfitShow {...props} />}>
-        </Route>
+        <Route
+          path="/OutfitsShow/:id"
+          element={<OutfitShow {...props} />}
+        ></Route>
       </Routes>
     </MemoryRouter>
   );
@@ -17,7 +19,7 @@ const renderComponent = (props, route) => {
 
 describe("<OutfitShow />", () => {
   it("renders without crashing", () => {
-   renderComponent({outfits:mockOutfits}, "/OutfitsShow/1")
+    renderComponent({ outfits: mockOutfits }, "/OutfitsShow/1");
     expect(screen.getByText("Date Night")).toBeInTheDocument();
     expect(screen.getByText("Gender: male")).toBeInTheDocument();
     expect(
@@ -32,8 +34,8 @@ describe("<OutfitShow />", () => {
     expect(screen.getByText("Accessories: None")).toBeInTheDocument();
     expect(screen.getByText("Back to outfits")).toBeInTheDocument();
   });
-  it("shows notfound when parameter doesn't match", ()=>{
-    renderComponent({outfits:mockOutfits}, "/OutfitsShow/3")
-    expect(screen.getByText("Outfit not located")).toBeInTheDocument()
-  }) 
+  it("shows notfound when parameter doesn't match", () => {
+    renderComponent({ outfits: mockOutfits }, "/OutfitsShow/3");
+    expect(screen.getByText("Outfit not located")).toBeInTheDocument();
+  });
 });

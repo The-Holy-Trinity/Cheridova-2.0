@@ -2,13 +2,10 @@ import React from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap";
 const OutfitShow = ({ outfits }) => {
-    
   const res = useParams();
-  const {id} = res
-  
-  const currentOutfit = outfits?.find(
-    (outfit) => outfit.id === +id
-  );
+  const { id } = res;
+
+  const currentOutfit = outfits?.find((outfit) => outfit.id === +id);
 
   return (
     <>
@@ -18,7 +15,6 @@ const OutfitShow = ({ outfits }) => {
             style={{
               width: "14rem",
             }}
-        
           >
             <img
               alt={`profile of outfits ${currentOutfit.name}`}
@@ -46,7 +42,11 @@ const OutfitShow = ({ outfits }) => {
               <Button>Back to outfits</Button>
             </NavLink>
           </Card>
-        ):<div><p>Outfit not located</p></div>}
+        ) : (
+          <div>
+            <p>Outfit not located</p>
+          </div>
+        )}
       </div>
     </>
   );

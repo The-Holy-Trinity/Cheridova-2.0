@@ -23,10 +23,16 @@ const OutfitIndex = ({ outfits }) => {
                   />
                 </div>
                 <CardBody className="bg-burgundy">
-                  <CardSubtitle className="mb-2 text-white font-garamond" tag="h6">
+                  <CardSubtitle
+                    className="mb-2 text-white font-garamond"
+                    tag="h6"
+                  >
                     Style: {outfit.style}
                   </CardSubtitle>
-                  <CardSubtitle className="mb-2 text-white font-garamond" tag="h6">
+                  <CardSubtitle
+                    className="mb-2 text-white font-garamond"
+                    tag="h6"
+                  >
                     Gender: {outfit.gender}
                   </CardSubtitle>
                   <NavLink to={`/OutfitsShow/${outfit.id}`}>
