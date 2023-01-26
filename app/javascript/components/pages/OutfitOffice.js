@@ -2,15 +2,15 @@ import React from "react";
 import { Card, CardBody, CardSubtitle, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
-const OutfitFormal = ({ outfits }) => {
-  const formalOutfits = outfits.filter((outfit) => {
-    if (outfit.style === "Formal") {
+const OutfitOffice = ({ outfits }) => {
+  const officeOutfits = outfits.filter((outfit) => {
+    if (outfit.style === "Office Attire") {
       return outfit;
     }
   });
   return (
     <main className="outfit-index-cards">
-      {formalOutfits?.map((outfit, index) => {
+      {officeOutfits?.map((outfit, index) => {
         return (
           <Card
             style={{
@@ -37,4 +37,4 @@ const OutfitFormal = ({ outfits }) => {
   );
 };
 
-export default OutfitFormal;
+export default OutfitOffice;

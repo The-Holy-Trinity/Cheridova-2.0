@@ -31,6 +31,33 @@ const Home = ({
             className="w-full h-full object-cover saturate-50"
             src={manne2}
           />
+      {logged_in && (
+        <h1 className="text-3xl font-bold underline text-center">
+          Welcome back!
+        </h1>
+      )}
+      {logged_in && (
+        <h1 className="text-1xl font-bold text-center">
+          Ready to make your day way more flashy?
+        </h1>
+      )}
+
+      {!logged_in && (
+        <h1 className="text-3xl font-bold underline text-center">Welcome!</h1>
+      )}
+      {!logged_in && (
+        <h1 className="text-2xl font-bold text-center">
+          Chéridova is your one-stop shop to upgrading your wardrobe.
+          Inspirations to many occasions we face in our day to day lives.
+        </h1>
+      )}
+      {!logged_in && (
+        <div className="bg-light green">
+          <button className="p-5 bg-purple font-semibold text-black hover:bg-red hover:text-green">
+            <a href={sign_in_route} className="nav-link">
+              Sign In
+            </a>
+          </button>
         </div>
 
         {/* text */}

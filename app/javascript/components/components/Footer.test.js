@@ -10,6 +10,10 @@ describe("<Footer />", () => {
         <Footer />
       </BrowserRouter>
     );
-    expect(screen.getByText('© 2023 Chéridova By: Annabella, Charlie, and Shannon. All Rights Reserved.')).toBeInTheDocument()
+    expect(
+      screen.getByText(
+        "© 2023 Chéridova By: Annabella, Charlie, and Shannon. All Rights Reserved."
+      )
+    ).toBeInTheDocument();
   });
 });

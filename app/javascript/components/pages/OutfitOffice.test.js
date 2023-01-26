@@ -1,14 +1,14 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import OutfitFormal from "./OutfitFormal";
+import OutfitOffice from "./OutfitOffice";
 import mockOutfits from "./mockOutfits";
 import { BrowserRouter, MemoryRouter, Routes, Route } from "react-router-dom";
 
-describe("<OutfitFormal />", () => {
+describe("<OutfitOffice />", () => {
   it("renders without crashing", () => {
     render(
       <BrowserRouter>
-        <OutfitFormal outfits={mockOutfits} />
+        <OutfitOffice outfits={mockOutfits} />
       </BrowserRouter>
     );
     const imgs = screen.getAllByRole("img");
@@ -21,15 +21,15 @@ describe("<OutfitFormal />", () => {
     expect(img1).toBeInTheDocument();
     expect(img2).toBeInTheDocument();
     expect(img1src).toEqual(
-      "https://seezona.imgix.net/ed/15/ed159a569d8f42efbf3870e4ccb68cee_m.png?auto=format&fit=fill&q=90&bg=F7F7F7&ar=300%3A365&ixlib=react-9.5.2&w=1600"
+      "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-06-16_Set_B_M_SIT_RACK_v1_1x1-scaled.jpeg"
     );
     expect(img2src).toEqual(
-      "https://n.nordstrommedia.com/id/sr3/4baa3f72-f4b9-4ff1-a89c-b54b229b0dd5.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2"
+      "https://www.stitchfix.com/men/blog/wp-content/uploads/2021/10/21-06-16_Set_B_M_SIT_RACK_v4_1x1-scaled.jpeg"
     );
-    expect(img1alt).toEqual("profile of outfits Formal1");
-    expect(img2alt).toEqual("profile of outfits Formal2");
-    expect(screen.getAllByText("Style: Formal").length).toEqual(2);
-    expect(screen.getAllByText("Gender: female").length).toEqual(2);
+    expect(img1alt).toEqual("profile of outfits Office1");
+    expect(img2alt).toEqual("profile of outfits Office2");
+    expect(screen.getAllByText("Style: Office Attire").length).toEqual(2);
+    expect(screen.getAllByText("Gender: Male").length).toEqual(2);
     expect(screen.getAllByText("See More Details").length).toEqual(2);
   });
 });

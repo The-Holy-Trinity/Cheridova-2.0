@@ -21,11 +21,11 @@ const Category = (props) => {
           justifyContent: "space-around",
         }}
       >
-        <NavLink to="/" className="nav-link p-2">
+        <NavLink to="/OutfitsOffice" className="nav-link">
           <button>Office Attire</button>
         </NavLink>
 
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/OutfitsCasual" className="nav-link">
           <button>Casual</button>
         </NavLink>
 
@@ -33,7 +33,7 @@ const Category = (props) => {
           <button>Formal</button>
         </NavLink>
 
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/OutfitsDate" className="nav-link">
           <button>Date Night</button>
         </NavLink>
       </div>

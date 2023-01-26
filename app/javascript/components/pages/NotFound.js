@@ -1,7 +1,6 @@
 import React from "react";
 import accessories from "../../../assets/photos/accessories.png";
 
-
 const NotFound = () => {
   return (
     <>
