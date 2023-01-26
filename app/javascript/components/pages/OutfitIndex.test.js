@@ -14,7 +14,12 @@ describe("<OutfitIndex />", () => {
     </BrowserRouter>);
 
     expect(screen.getAllByText("Style: Date Night").length).toEqual(2);
+    expect(screen.getAllByText("Style: Formal").length).toEqual(2);
+    expect(screen.getAllByText("Style: Casual").length).toEqual(2);
+    expect(screen.getAllByText("Style: Office Attire").length).toEqual(2);
     expect(screen.getAllByText("Gender: male").length).toEqual(2);
-    expect(screen.getAllByText("See More Details").length).toEqual(6);
+    expect(screen.getAllByText("Gender: female").length).toEqual(2);
+    expect(screen.getAllByText("Gender: Male").length).toEqual(4);
+    expect(screen.getAllByText("See More Details").length).toEqual(8);
   });
 });
