@@ -36,6 +36,7 @@ const OutfitProtectedIndex = ({ outfits, logged_in, current_user, deleteOutfit})
               </NavLink>
               <NavLink to="/Outfits">
                 <Button onClick={() => deleteOutfit(`${outfit.id}`)}>Delete this outfit</Button>
+              </NavLink>
               <NavLink to={`/OutfitEdit/${outfit.id}`}>
                 <Button>Edit this outfit</Button>
               </NavLink>
