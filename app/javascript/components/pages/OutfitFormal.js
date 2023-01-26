@@ -3,9 +3,11 @@ import { Card, CardBody, CardSubtitle, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 const OutfitFormal = ({ outfits }) => {
-  const formalOutfits = outfits.filter((outfit)=>{if(outfit.style==="Formal"){return outfit}
-  
-  })
+  const formalOutfits = outfits.filter((outfit) => {
+    if (outfit.style === "Formal") {
+      return outfit;
+    }
+  });
   return (
     <main className="outfit-index-cards">
       {formalOutfits?.map((outfit, index) => {

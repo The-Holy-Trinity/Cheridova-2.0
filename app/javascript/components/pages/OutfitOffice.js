@@ -3,9 +3,11 @@ import { Card, CardBody, CardSubtitle, Button } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 const OutfitOffice = ({ outfits }) => {
-  const officeOutfits = outfits.filter((outfit)=>{if(outfit.style==="Office Attire"){return outfit}
-  
-  })
+  const officeOutfits = outfits.filter((outfit) => {
+    if (outfit.style === "Office Attire") {
+      return outfit;
+    }
+  });
   return (
     <main className="outfit-index-cards">
       {officeOutfits?.map((outfit, index) => {

@@ -8,7 +8,7 @@ const OutfitCasual = ({ outfits }) => {
       return outfit;
     }
   });
- 
+
   return (
     <main className="outfit-index-cards">
       {casualOutfits?.map((outfit, index) => {
