@@ -6,7 +6,6 @@ const OutfitOffice = ({ outfits }) => {
   const officeOutfits = outfits.filter((outfit)=>{if(outfit.style==="Office Attire"){return outfit}
   
   })
-  console.log(officeOutfits)
   return (
     <main className="outfit-index-cards">
       {officeOutfits?.map((outfit, index) => {
