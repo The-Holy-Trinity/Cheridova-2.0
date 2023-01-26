@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import woman1 from "../../../assets/photos/woman1.jpg";
-import manne from "../../../assets/photos/manne.jpg";
+import manne2 from "../../../assets/photos/manne2.jpg";
 
 const Home = ({
   logged_in,
@@ -29,7 +29,7 @@ const Home = ({
           <img
             alt="manne"
             className="w-full h-full object-cover saturate-50"
-            src={manne}
+            src={manne2}
           />
         </div>
 
