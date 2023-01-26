@@ -15,6 +15,7 @@ module.exports = {
         gray: "#343a40",
         burgundy: "#B17164",
         dustyrose: "#DBBAB4",
+        coral: "#CD5C5C",
       },
 
       fontFamily: {
