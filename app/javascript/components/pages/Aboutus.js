@@ -2,9 +2,7 @@ import React from "react";
 const Aboutus = (props) => {
   return (
     <>
-<<<<<<< Updated upstream
       <h1 style={{ textAlign: "center" }}>About us</h1>
-=======
       <h1
         style={{
           textAlign: 'center',
@@ -49,7 +47,6 @@ const Aboutus = (props) => {
         find the most stylish things at prices that won't break the bank
       </h3>
       <br />
->>>>>>> Stashed changes
     </>
   );
 };
