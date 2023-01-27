@@ -1,4 +1,8 @@
 import React from "react";
+import Charlie from "../../../assets/photos/charlie.png"
+import Bella from "../../../assets/photos/bella.png"
+import Shannon from "../../../assets/photos/shannon.png"
+
 const Aboutus = (props) => {
   return (
     <>
