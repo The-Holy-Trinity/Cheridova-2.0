@@ -21,11 +21,6 @@ const Navigation = ({
             <NavLink to="/About" className="nav-link">
               <button>About</button>
             </NavLink>
-            {/* {logged_in && (
-              <NavLink to="/MyCatalog" className="nav-link">
-                <button>My Catalog</button>
-              </NavLink>
-            )} */}
             {logged_in && (
               <NavLink to="/MyUploads" className="nav-link">
                 <button>My Uploads</button>
