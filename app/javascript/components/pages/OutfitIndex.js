@@ -13,7 +13,6 @@ const OutfitIndex = ({ outfits }) => {
                 style={{
                   width: "14rem",
                 }}
-                key={index}
               >
                 <div className="w-full rounded hover:shadow-2xl">
                   <img
@@ -22,21 +21,15 @@ const OutfitIndex = ({ outfits }) => {
                     src={outfit.image}
                   />
                 </div>
-                <CardBody className="bg-burgundy">
-                  <CardSubtitle
-                    className="mb-2 text-white font-garamond"
-                    tag="h6"
-                  >
+                <CardBody className="bg-lightgray text-white font-garamond">
+                  <CardSubtitle className="mb-2" tag="h6">
                     Style: {outfit.style}
                   </CardSubtitle>
-                  <CardSubtitle
-                    className="mb-2 text-white font-garamond"
-                    tag="h6"
-                  >
+                  <CardSubtitle className="mb-2" tag="h6">
                     Gender: {outfit.gender}
                   </CardSubtitle>
                   <NavLink to={`/OutfitsShow/${outfit.id}`}>
-                    <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-green hover:border-gray rounded">
+                    <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
                       {" "}
                       See More Details
                     </button>

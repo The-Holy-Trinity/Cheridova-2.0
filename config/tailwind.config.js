@@ -13,9 +13,10 @@ module.exports = {
         beige: "#F2EDE6",
         green: "#4A573E",
         gray: "#343a40",
-        burgundy: "#B17164",
+        burgundy: "#C9A9A6",
         dustyrose: "#DBBAB4",
         coral: "#CD5C5C",
+        lightgray: "#8D918D",
       },
 
       fontFamily: {
