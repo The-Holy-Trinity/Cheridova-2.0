@@ -19,6 +19,14 @@ import OutfitCasual from "./pages/OutfitCasual";
 import OutfitOffice from "./pages/OutfitOffice";
 
 const App = (props) => {
+
+  const [active, setActive] = useState(false);
+
+  const handleChangeActive = () => {
+    setActive((previousStar) => {
+      return !previousStar;
+    });
+  };
   const [outfits, setOutfits] = useState([]);
   useEffect(() => {
     readOutfits();
@@ -105,7 +113,7 @@ const App = (props) => {
         <Route
           exact
           path="/OutfitsShow/:id"
-          element={<OutfitShow outfits={outfits} />}
+          element={<OutfitShow outfits={outfits} active={active} handleChangeActive={handleChangeActive} />}
         />
         <Route
           path="/OutfitEdit/:id"
