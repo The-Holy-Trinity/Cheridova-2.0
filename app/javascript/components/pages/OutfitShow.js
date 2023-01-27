@@ -9,19 +9,17 @@ const OutfitShow = ({ outfits }) => {
 
   return (
     <>
-      <div>
+      <div className="flex flex-cols-1 justify-center font-garamond pt-4">
         {currentOutfit ? (
-          <Card
-            style={{
-              width: "14rem",
-            }}
-          >
+          <Card className="h-80 w-96">
             <img
               alt={`profile of outfits ${currentOutfit.name}`}
               src={currentOutfit.image}
             />
             <CardBody>
-              <CardTitle tag="h5">{currentOutfit.style}</CardTitle>
+              <CardTitle className="text-center text-bold" tag="h5">
+                {currentOutfit.style}
+              </CardTitle>
               <CardSubtitle className="mb-2 text-muted" tag="h6">
                 Gender: {currentOutfit.gender}
               </CardSubtitle>
@@ -38,9 +36,13 @@ const OutfitShow = ({ outfits }) => {
                 Accessories: {currentOutfit.accessories}
               </CardSubtitle>
             </CardBody>
-            <NavLink to={`/Outfits`}>
-              <Button>Back to outfits</Button>
-            </NavLink>
+            <div className="flex items-center justify-center pb-4">
+              <NavLink to={`/Outfits`}>
+                <button className="bg-gray hover:bg-green text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded pb-8">
+                  Back to Outfits
+                </button>
+              </NavLink>
+            </div>
           </Card>
         ) : (
           <div>
