@@ -27,7 +27,7 @@ const OutfitOffice = ({ outfits }) => {
                     src={outfit.image}
                   />
                 </div>
-                <CardBody className="bg-lightgray font-garamond text-white">
+                <CardBody className="bg-charcoal font-garamond text-white">
                   <CardSubtitle className="mb-2" tag="h6">
                     Style: {outfit.style}
                   </CardSubtitle>
@@ -35,7 +35,7 @@ const OutfitOffice = ({ outfits }) => {
                     Gender: {outfit.gender}
                   </CardSubtitle>
                   <NavLink to={`/OutfitsShow/${outfit.id}`}>
-                    <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
+                    <button className="bg-lightgray hover:bg-green text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
                       {" "}
                       See More Details
                     </button>

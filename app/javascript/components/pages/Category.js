@@ -8,7 +8,7 @@ import office from "../../../assets/photos/office.png";
 
 const Category = (props) => {
   return (
-    <div className="container justify-items-center text-center space-y-6">
+    <div className="container justify-items-center text-center space-y-6 pt-4">
       <div className="space-y-4">
         <h1 className="text-4xl font-garamond text-center space-y-4">
           Categories
@@ -27,7 +27,7 @@ const Category = (props) => {
               width: "14rem",
             }}
           >
-            <CardBody className="bg-lightgray text-white font-garamond">
+            <CardBody className="bg-charcoal text-white font-garamond">
               <CardSubtitle className="mb-2" tag="h6">
                 <NavLink to="/OutfitsOffice" className="nav-link">
                   <img
@@ -35,7 +35,7 @@ const Category = (props) => {
                     className="object-cover h-48 w-96"
                     src={office}
                   />
-                  <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
+                  <button className="bg-lightgray hover:bg-green text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
                     Office Attire
                   </button>
                 </NavLink>
@@ -51,14 +51,14 @@ const Category = (props) => {
               width: "14rem",
             }}
           >
-            <CardBody className="bg-lightgray text-white font-garamond">
+            <CardBody className="bg-gray text-white font-garamond">
               <NavLink to="/OutfitsCasual" className="nav-link">
                 <img
                   alt="casual1"
                   className="object-cover h-48 w-96"
                   src={casual1}
                 />
-                <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
+                <button className="bg-brown hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
                   Casual
                 </button>
               </NavLink>
@@ -73,14 +73,14 @@ const Category = (props) => {
               width: "14rem",
             }}
           >
-            <CardBody className="bg-lightgray text-white font-garamond">
+            <CardBody className="bg-blue text-white font-garamond">
               <NavLink to="/OutfitsFormal" className="nav-link">
                 <img
                   alt="formal"
                   className="object-cover h-48 w-96"
                   src={fm2}
                 />
-                <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
+                <button className="bg-gray hover:bg-green text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
                   Formal
                 </button>
               </NavLink>
@@ -95,14 +95,14 @@ const Category = (props) => {
               width: "14rem",
             }}
           >
-            <CardBody className="bg-lightgray text-white font-garamond">
+            <CardBody className="bg-purple text-white font-garamond">
               <NavLink to="/OutfitsDate" className="nav-link">
                 <img
                   alt="party"
                   className="object-cover h-48 w-96"
                   src={party}
                 />
-                <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
+                <button className="bg-lightgray hover:bg-green text-white font-bold font-garamond py-1 px-1 border-b-2 border-gray hover:border-green rounded">
                   Date Night
                 </button>
               </NavLink>

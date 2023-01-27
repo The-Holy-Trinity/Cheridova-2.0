@@ -12,11 +12,16 @@ module.exports = {
       colors: {
         beige: "#F2EDE6",
         green: "#4A573E",
-        gray: "#343a40",
+        gray: "#585858",
         burgundy: "#C9A9A6",
         dustyrose: "#DBBAB4",
         coral: "#CD5C5C",
         lightgray: "#8D918D",
+        brown: "#967969",
+        blue: "#4169E1",
+        lightgreen: "#84a98c",
+        purple: "#CBC3E3",
+        charcoal: "#36454F",
       },
 
       fontFamily: {
