@@ -86,7 +86,7 @@ const App = (props) => {
         <Route exact path="/" element={<Home {...props} />} />
         <Route exact path="/Categories" element={<Category {...props} />} />
         <Route exact path="/About" element={<Aboutus />} />
-        <Route exact path="/MyCatalog" element={<MyCatalog />} />
+        
         <Route
           exact
           path="/MyUploads"

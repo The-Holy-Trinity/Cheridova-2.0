@@ -22,11 +22,6 @@ const Navigation = ({
               <button>About</button>
             </NavLink>
             {logged_in && (
-              <NavLink to="/MyCatalog" className="nav-link">
-                <button>My Catalog</button>
-              </NavLink>
-            )}
-            {logged_in && (
               <NavLink to="/MyUploads" className="nav-link">
                 <button>My Uploads</button>
               </NavLink>

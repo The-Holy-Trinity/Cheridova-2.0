@@ -412,7 +412,7 @@ outfit_seeds = [
 
 ]
 outfit_seeds.each do |outfit|
-  user.outfits.create(outfit)
+  user.outfits.find_or_create_by(outfit)
   p "creating: #{outfit}"
 end
 
