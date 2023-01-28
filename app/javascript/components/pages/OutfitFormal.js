@@ -27,7 +27,7 @@ const OutfitFormal = ({ outfits }) => {
                     src={outfit.image}
                   />
                 </div>
-                <CardBody className="bg-blue text-gray font-garamond">
+                <CardBody className="bg-blue text-white font-garamond">
                   <CardSubtitle className="mb-2" tag="h6">
                     Style: {outfit.style}
                   </CardSubtitle>

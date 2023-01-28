@@ -11,7 +11,7 @@ const OutfitShow = ({ outfits, handleChangeActive, active }) => {
 
   return (
     <>
-      <div className="flex flex-cols-1 justify-center font-garamond pt-4">
+      <div className="flex flex-cols-1 justify-center font-garamond pt-2">
         {currentOutfit ? (
           <Card className="h-80 w-96">
             <img

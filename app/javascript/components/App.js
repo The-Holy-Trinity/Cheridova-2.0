@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import Aboutus from "./pages/Aboutus";
-import MyCatalog from "./pages/MyCatalog";
 import OutfitNew from "./pages/OutfitNew";
 import OutfitProtectedIndex from "./pages/OutfitProtectedIndex";
 import Footer from "./components/Footer";
