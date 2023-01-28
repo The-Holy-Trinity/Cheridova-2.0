@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, FormGroup, Input, Label, Button } from "reactstrap";
+import { Form, FormGroup, Input, Label, Row, Col, Button } from "reactstrap";
 import { useNavigate, useParams } from "react-router-dom";
 
 const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
@@ -40,7 +40,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                 name="name"
                 placeholder="Name"
                 onChange={handleChange}
-                value={newOutfit.name}
+                value={editOutfit.name}
               />
             </FormGroup>
 
@@ -52,7 +52,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                   name="top"
                   placeholder="Top"
                   onChange={handleChange}
-                  value={newOutfit.top}
+                  value={editOutfit.top}
                 />
               </FormGroup>
             </Col>
@@ -64,7 +64,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                   name="bottom"
                   placeholder="Bottom"
                   onChange={handleChange}
-                  value={newOutfit.bottom}
+                  value={editOutfit.bottom}
                 />
               </FormGroup>
             </Col>
@@ -76,7 +76,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                   name="shoes"
                   placeholder="Shoes"
                   onChange={handleChange}
-                  value={newOutfit.shoes}
+                  value={editOutfit.shoes}
                 />
               </FormGroup>
             </Col>
@@ -88,7 +88,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                   name="accessories"
                   placeholder="Accessories"
                   onChange={handleChange}
-                  value={newOutfit.accessories}
+                  value={editOutfit.accessories}
                 />
               </FormGroup>
             </Col>
@@ -100,7 +100,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                   name="style"
                   placeholder="Style"
                   onChange={handleChange}
-                  value={newOutfit.style}
+                  value={editOutfit.style}
                 />
               </FormGroup>
             </Col>
@@ -112,7 +112,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                   name="gender"
                   placeholder="Gender"
                   onChange={handleChange}
-                  value={newOutfit.gender}
+                  value={editOutfit.gender}
                 />
               </FormGroup>
             </Col>
@@ -123,7 +123,7 @@ const OutfitEdit = ({ outfits, updateOutfit, logged_in, current_user }) => {
                 name="image"
                 placeholder="Image URL"
                 onChange={handleChange}
-                value={newOutfit.image}
+                value={editOutfit.image}
               />
             </FormGroup>
           </Row>
