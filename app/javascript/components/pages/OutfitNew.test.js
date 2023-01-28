@@ -26,6 +26,6 @@ describe("<OutfitNew />", () => {
     expect(screen.getByText("Style")).toBeInTheDocument();
     expect(screen.getByText("Image")).toBeInTheDocument();
     expect(screen.getByText("Gender")).toBeInTheDocument();
-    expect(screen.getByText("Submit Outfit!")).toBeInTheDocument();
+    expect(screen.getByText("Submit")).toBeInTheDocument();
   });
 });

@@ -11,7 +11,7 @@ describe("<Home />", () => {
         <Home />
       </BrowserRouter>
     );
-    expect(screen.getByText("Welcome!")).toBeInTheDocument();
+    expect(screen.getByText("Welcome.")).toBeInTheDocument();
     expect(
       screen.getByText(
         `Chéridova is your one-stop shop to upgrading your wardrobe. Inspirations to many occasions we face in our day to day lives.`
