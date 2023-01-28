@@ -6,21 +6,31 @@ import Shannon from "../../../assets/photos/shannon.png"
 const Aboutus = (props) => {
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>About us</h1>
       <h1
         style={{
           textAlign: 'center',
           fontWeight: 'bold',
           fontSize: '50px',
-          fontStyle: 'Helvetica-Oblique',
           color: 'teal',
         }}
       >
         Meet the Developers
       </h1>
-     
+
+      {/* <div> 
       <img src={Charlie} width="200" height="200" />
-      <h3
+      </div> */}
+      <div class="flex items-center">
+  <img src={Charlie} width="200" height="200"/>
+  <div>
+    <strong>Charlie Si</strong>
+    <div>
+    <span>An avid gamer with a great eye for fashion if you're a
+        sweatshirt and jeans type of guy</span>
+  </div>
+</div>
+</div>
+      {/* <h3
         style={{
           textAlign: 'left',
           color: 'teal',
@@ -30,7 +40,7 @@ const Aboutus = (props) => {
       >
         Charlie Si, an avid gamer with a great eye for fashion if you're a
         sweatshirt and jeans type of guy
-      </h3>
+      </h3> */}
       <br />
       <img src={Bella} align="right" width="200" height="200" />
       <br />
