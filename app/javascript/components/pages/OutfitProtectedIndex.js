@@ -31,7 +31,7 @@ const OutfitProtectedIndex = ({
                   src={outfit.image}
                   className="object-cover h-48 w-96"
                 />
-                <CardBody>
+                <CardBody className="bg-lightbeige">
                   <CardSubtitle className="mb-2 text-muted" tag="h6">
                     Name: {outfit.name}
                   </CardSubtitle>

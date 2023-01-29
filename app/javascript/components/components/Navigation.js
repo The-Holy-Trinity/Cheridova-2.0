@@ -54,7 +54,7 @@ const Navigation = ({
             )}
           </div>
           <div className="items-center">
-            <h4 className="text-2xl font-bold">Chéridova</h4>
+            <h4 className="text-3xl font-bold">Chéridova</h4>
           </div>
         </div>
       </nav>

@@ -28,7 +28,7 @@ const OutfitDate = ({ outfits }) => {
                     src={outfit.image}
                   />
                 </div>
-                <CardBody className="bg-purple font-garamond text-gray">
+                <CardBody className="bg-purple font-garamond text-white">
                   <CardSubtitle className="mb-2" tag="h6">
                     Style: {outfit.style}
                   </CardSubtitle>

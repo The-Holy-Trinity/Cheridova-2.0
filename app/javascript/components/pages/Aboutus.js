@@ -6,61 +6,51 @@ import Shannon from "../../../assets/photos/shannon.png"
 const Aboutus = (props) => {
   return (
     <>
-      <h1
-        style={{
-          textAlign: 'center',
-          fontWeight: 'bold',
-          fontSize: '50px',
-          color: 'teal',
-        }}
-      >
+      <h1 className="text-5xl font-playfair font-bold text-center pt-10">
         Meet the Developers
       </h1>
-
-      {/* <div> 
-      <img src={Charlie} width="200" height="200" />
-      </div> */}
-      <div class="flex items-center">
-  <img src={Charlie} width="200" height="200"/>
-  <div>
-    <strong>Charlie Si</strong>
-    <div>
-    <span>An avid gamer with a great eye for fashion if you're a
-        sweatshirt and jeans type of guy</span>
-  </div>
-</div>
-</div>
-      {/* <h3
-        style={{
-          textAlign: 'left',
-          color: 'teal',
-          wordWrap: 'normal',
-          wordWrap: 'break-word',
-        }}
-      >
-        Charlie Si, an avid gamer with a great eye for fashion if you're a
-        sweatshirt and jeans type of guy
-      </h3> */}
-      <br />
-      <img src={Bella} align="right" width="200" height="200" />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h3 style={{ textAlign: 'right', color: 'teal' }}>
-        Annabella Chan, a San Diego native, with a natural California girl style
-      </h3>
-      <img src={Shannon} width="200" height="200" />
-      <h3 style={{ textAlign: 'left', color: 'teal' }}>
-        Shannon Young, a self proclaimed fashionista on a budget who can always
-        find the most stylish things at prices that won't break the bank
-      </h3>
-      <br />
+      <div className="lg:grid lg:grid-cols-3 gap-20 pt-18 justify-items-center align-center p-20">
+        {/* images */}
+        <div>
+          <img
+            className="mx-auto rounded-full border-8 border-lime-600 h-64 w-64"
+            src={Charlie}
+          />
+          <p className="text-center font-playfair pt-4 font-bold text-xl justify-wrap">
+            Charlie Si
+          </p>
+          <sub className="text-center font-garamond text-lg justify-wrap">
+            "An avid gamer with a great eye for fashion if you're a sweatshirt
+            and jeans type of guy."
+          </sub>
+        </div>
+        <div>
+          <img
+            className="mx-auto rounded-full border-8 border-indigo-500/75 h-64 w-64"
+            src={Bella}
+          />
+          <p className="text-center font-playfair pt-4 font-bold text-xl">
+            Annabella Chan
+          </p>
+          <sub className="mx-auto text-center font-garamond text-lg justify-wrap">
+            "A San Francisco Bay Area native, with a natural California girl
+            style."
+          </sub>
+        </div>
+        <div>
+          <img
+            className="mx-auto rounded-full border-8 border-amber-200 h-64 w-64"
+            src={Shannon}
+          />
+          <p className="text-center font-playfair pt-4 font-bold text-xl">
+            Shannon Young
+          </p>
+          <sub className="text-center font-garamond text-lg justify-wrap">
+            "A self proclaimed fashionista on a budget who can always find the
+            most stylish things at prices that won't break the bank."
+          </sub>
+        </div>
+      </div>
     </>
   );
 };

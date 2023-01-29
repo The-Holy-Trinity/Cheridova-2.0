@@ -10,10 +10,10 @@ const Category = (props) => {
   return (
     <div className="container justify-items-center text-center space-y-6 pt-4">
       <div className="space-y-4">
-        <h1 className="text-4xl font-garamond text-center space-y-4">
+        <h1 className="text-5xl font-playfair text-center space-y-4">
           Categories
         </h1>
-        <NavLink to="/Outfits" className="nav-link">
+        <NavLink to="/Outfits" className="nav-link pt-2">
           <button className="bg-coral hover:bg-gray text-white font-bold font-garamond py-2 px-2 border-b-2 border-gray hover:border-green rounded">
             All Outfits
           </button>
