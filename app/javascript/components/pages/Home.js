@@ -37,7 +37,7 @@ const Home = ({
         <div className="absolute flex flex-col md:top-[35%] font-garamond justify-center text-center">
           {/* user logged in */}
           {logged_in && (
-            <p className="text-6xl font-bold text-coral">Welcome back!</p>
+            <p className="text-8xl font-bold text-coral">Welcome back!</p>
           )}
           {logged_in && (
             <p className="text-2xl text-white">
@@ -47,7 +47,7 @@ const Home = ({
 
           {/* user not logged in  */}
           {!logged_in && (
-            <p className="font-bold text-6xl text-coral">Welcome.</p>
+            <p className="font-bold text-8xl text-coral">Welcome.</p>
           )}
           {!logged_in && (
             <p className="text-2xl text-white">
