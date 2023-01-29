@@ -53,7 +53,7 @@ const App = (props) => {
   };
 
   const deleteOutfit = (id) => {
-    fetch(`http://localhost:3000/outfits/${id}`, {
+    fetch(`/outfits/${id}`, {
       headers: {
         "Content-Type": "application/json",
       },
@@ -66,7 +66,7 @@ const App = (props) => {
 
   const updateOutfit = (outfit, id) => {
     console.log(outfit, id);
-    fetch(`http://localhost:3000/outfits/${id}`, {
+    fetch(`/outfits/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
