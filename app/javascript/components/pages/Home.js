@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import woman1 from "../../../assets/photos/woman1.jpg";
 import manne2 from "../../../assets/photos/manne2.jpg";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const Home = ({
   logged_in,
@@ -46,36 +47,59 @@ const Home = ({
           )}
 
           {/* user not logged in  */}
-          {!logged_in && (
-            <p className="font-bold text-8xl text-coral">Welcome.</p>
-          )}
-          {!logged_in && (
-            <p className="text-2xl text-white">
-              Chéridova is your one-stop shop to upgrading your wardrobe.
-              Inspirations to many occasions we face in our day to day lives.
-            </p>
-          )}
-          <div className="flex justify-center items-center gap-4">
+          <motion.div
+            className="md:w-2/5 mx-auto text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             {!logged_in && (
-              <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-2 px-4 border-b-4 border-green hover:border-gray rounded">
-                <a href={sign_in_route} className="nav-link">
-                  Sign In
-                </a>
-              </button>
+              <p className="font-bold text-8xl text-coral">Welcome.</p>
             )}
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             {!logged_in && (
-              <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-2 px-4 border-b-4 border-green hover:border-gray rounded">
-                <a href={new_user_route} className="nav-link">
-                  Sign Up
-                </a>
-              </button>
+              <p className="text-2xl text-white">
+                Chéridova is your one-stop shop to upgrading your wardrobe.
+                Inspirations to many occasions we face in our day to day lives.
+              </p>
             )}
-            <NavLink to="/Categories" className="nav-link">
-              <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-2 px-4 border-b-4 border-green hover:border-gray rounded">
-                View Categories
-              </button>
-            </NavLink>
-          </div>
+            <div className="flex justify-center items-center gap-4">
+              {!logged_in && (
+                <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-2 px-4 border-b-4 border-green hover:border-gray rounded">
+                  <a href={sign_in_route} className="nav-link">
+                    Sign In
+                  </a>
+                </button>
+              )}
+              {!logged_in && (
+                <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-2 px-4 border-b-4 border-green hover:border-gray rounded">
+                  <a href={new_user_route} className="nav-link">
+                    Sign Up
+                  </a>
+                </button>
+              )}
+              <NavLink to="/Categories" className="nav-link">
+                <button className="bg-green hover:bg-gray text-white font-bold font-garamond py-2 px-4 border-b-4 border-green hover:border-gray rounded">
+                  View Categories
+                </button>
+              </NavLink>
+            </div>
+          </motion.div>
         </div>
       </div>
     </>

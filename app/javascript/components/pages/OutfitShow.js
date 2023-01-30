@@ -3,6 +3,8 @@ import { useParams, NavLink } from "react-router-dom";
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap";
 import Active from "../../../assets/photos/yellowstar.png";
 import Inactive from "../../../assets/photos/blackstar.png";
+
+
 const OutfitShow = ({ outfits, handleChangeActive, active }) => {
   const res = useParams();
   const { id } = res;
@@ -18,23 +20,23 @@ const OutfitShow = ({ outfits, handleChangeActive, active }) => {
               alt={`profile of outfits ${currentOutfit.name}`}
               src={currentOutfit.image}
             />
-            <div style={{width:"20px", marginLeft:"10px"}}>
-            {active ? (
-          <img
-            className="active"
-            src={Active}
-            alt="yellow star"
-            onClick={() => handleChangeActive()}
-          />
-        ) : (
-          <img
-            className="inactive"
-            src={Inactive}
-            alt="black and white star"
-            onClick={() => handleChangeActive()}
-          />
-         
-        )} </div>
+            <div style={{ width: "20px", marginLeft: "10px" }}>
+              {active ? (
+                <img
+                  className="active"
+                  src={Active}
+                  alt="yellow star"
+                  onClick={() => handleChangeActive()}
+                />
+              ) : (
+                <img
+                  className="inactive"
+                  src={Inactive}
+                  alt="black and white star"
+                  onClick={() => handleChangeActive()}
+                />
+              )}{" "}
+            </div>
             <CardBody>
               <CardTitle className="text-center text-bold" tag="h5">
                 {currentOutfit.style}

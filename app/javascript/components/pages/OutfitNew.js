@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Input, Label, Row, Col } from "reactstrap";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const OutfitNew = ({ createOutfit, logged_in, current_user }) => {
   const navigate = useNavigate();
@@ -27,10 +28,21 @@ const OutfitNew = ({ createOutfit, logged_in, current_user }) => {
   if (logged_in === true) {
     return (
       <div className="container font-garamond justify-items-center space-y-2 pt-10">
-        <h2 className="text-center font-bold text-4xl">
-          Show us your fashion taste.
-        </h2>
-        <p className="text-center text-2xl">We'd love to see your style.</p>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <h2 className="text-center font-bold text-4xl">
+            Show us your fashion taste.
+          </h2>
+          <p className="text-center text-2xl">We'd love to see your style.</p>
+        </motion.div>
         <Form className="submitForm">
           <Row>
             <FormGroup>
